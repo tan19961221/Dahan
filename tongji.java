@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class tongji {
      
     public static void main(String[] args) {
@@ -9,5 +7,4 @@ public class tongji {
             }
              
         }
-    }
-}
+   
