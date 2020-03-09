@@ -56,6 +56,6 @@ public class TestStudent {
         student5.setScienceScore(99.0);
         Student[] students = {student1, student2, student3, student4, student5};
         Student.maxAvgScore(students);
-        Student.maxScience(students);
+        Student.maxScienceScore(students);
     }
 }

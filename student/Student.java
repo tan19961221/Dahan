@@ -79,29 +79,29 @@ public class Student {
 
     public static void maxAvgScore(Student[] students) {
         for (int i = 0; i < students.length-1; i++) {
-            if (students[i].avg() > students[i + 1].avg()) {
-                Student temp = students[i];
+            if (students[i].avg() > students[i+1].avg()) {
+                Student x = students[i];
                 students[i] = students[i + 1];
-                students[i + 1] = temp;
+                students[i + 1] = x;
             }
         }
         System.out.println("平均分最高的学生是：" + students[students.length - 1].getName());
-        System.out.println("他的语文成绩是" + students[students.length - 1].getChineseScore());
-        System.out.println("他的数学成绩是" + students[students.length - 1].getMathScore());
-        System.out.println("他的英语成绩是" + students[students.length - 1].getEnglishScore());
-        System.out.println("他的理综成绩是" + students[students.length - 1].getScienceScore());
+        System.out.println("语文成绩是" + students[students.length - 1].getChineseScore());
+        System.out.println("数学成绩是" + students[students.length - 1].getMathScore());
+        System.out.println("英语成绩是" + students[students.length - 1].getEnglishScore());
+        System.out.println("理科成绩是" + students[students.length - 1].getScienceScore());
     }
 
-    public static void maxScience(Student[] students) {
+    public static void maxScienceScore(Student[] students) {
         for (int i = 0; i < students.length-1; i++) {
             if (students[i].getScienceScore() > students[i + 1].getScienceScore()) {
-                Student temp = students[i];
+                Student x = students[i];
                 students[i] = students[i + 1];
-                students[i + 1] = temp;
+                students[i + 1] = x;
             }
         }
-        System.out.println("理科最高的学生是：" + students[students.length - 1].getName());
-        System.out.println("他的理综成绩是" + students[students.length - 1].getScienceScore());
+        System.out.println("理科成绩最高的学生是：" + students[students.length - 1].getName());
+        System.out.println("他的理科成绩是" + students[students.length - 1].getScienceScore());
     }
 
 
