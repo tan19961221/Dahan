@@ -1,61 +1,46 @@
+import java.util.Scanner;
+
 public class TestStudent {
     public static void main(String[] args) {
-        Student student1=new Student();
-        student1.setName("小1");
-        student1.setChineseName("语文");
-        student1.setMathName("数学");
-        student1.setEnglishName("英语");
-        student1.setScienceName("理科");
-        student1.setChineseScore(90.0);
-        student1.setMathScore(85.0);
-        student1.setEnglishScore(80.0);
-        student1.setScienceScore(80.0);
+        Student[] stu = new Student[5]; //装五个学生学生对象
+        //使用循环的方式给数组赋值
+        Scanner  sc=new Scanner(System.in);
+        for (int i = 0; i < stu.length; i++) {
+            Student  st=new Student();
+            System.out.println("请输入第"+(i+1)+"个学生的姓名:");
+            st.setStuName(sc.next());
+            System.out.println("请输入第"+(i+1)+"个学生的成绩:");
+            double math=sc.nextDouble();
+            st.setMath(math);
+            double eng=sc.nextDouble();
+            st.setEnglish(eng);
+            double ch=sc.nextDouble();
+            st.setChinese(ch);
+            double science=sc.nextDouble();
+            st.setScience(science);
+            stu[i]=st;
+        }
 
-        Student student2=new Student();
-        student2.setName("小2");
-        student2.setChineseName("语文");
-        student2.setMathName("数学");
-        student2.setEnglishName("英语");
-        student2.setScienceName("理科");
-        student2.setChineseScore(92.0);
-        student2.setMathScore(86.0);
-        student2.setEnglishScore(88.0);
-        student2.setScienceScore(83.0);
+        //得到平均分最高
+        int  index=0;
+        double   maxAvg=stu[0].getAvgScore();//假设默认的是第一个数据
+        for (int i = 1; i < stu.length; i++) {
+            if(maxAvg<stu[i].getAvgScore()){
+                maxAvg=stu[i].getAvgScore(); //得到平均分最大值其实就是得到具体的哪个对象
+                index=i;//得到 平均分最大值的下标
+            }
+        }
+        System.out.println("平均分最大值的人所有的信息如下:"+stu[index].toString());
+        //得到理科成绩最高
+        int x=0;
+        double maxScience=stu[0].getScience();
+        for (int i = 1; i < stu.length; i++) {
+            if(maxScience<stu[i].getScience()){
+                maxScience=stu[i].getScience(); //得到理科最大值其实就是得到具体的哪个对象
+                x=i;//得到 理科最大值的下标
+            }
+        }
+        System.out.println("理科成绩最高的学生是:"+stu[x].getStuName());
 
-        Student student3=new Student();
-        student3.setName("小3");
-        student3.setChineseName("语文");
-        student3.setMathName("数学");
-        student3.setEnglishName("英语");
-        student3.setScienceName("理科");
-        student3.setChineseScore(80.0);
-        student3.setMathScore(95.0);
-        student3.setEnglishScore(70.0);
-        student3.setScienceScore(90.0);
-
-        Student student4=new Student();
-        student4.setName("小4");
-        student4.setChineseName("语文");
-        student4.setMathName("数学");
-        student4.setEnglishName("英语");
-        student4.setScienceName("理科");
-        student4.setChineseScore(78.0);
-        student4.setMathScore(77.0);
-        student4.setEnglishScore(80.0);
-        student4.setScienceScore(81.0);
-
-        Student student5=new Student();
-        student5.setName("小5");
-        student5.setChineseName("语文");
-        student5.setMathName("数学");
-        student5.setEnglishName("英语");
-        student5.setScienceName("理科");
-        student5.setChineseScore(99.0);
-        student5.setMathScore(79.0);
-        student5.setEnglishScore(84.0);
-        student5.setScienceScore(99.0);
-        Student[] students = {student1, student2, student3, student4, student5};
-        Student.maxAvgScore(students);
-        Student.maxScienceScore(students);
     }
 }

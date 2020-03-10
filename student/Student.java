@@ -1,109 +1,64 @@
 public class Student {
-    private String name;
-    private String chineseName;
-    private String mathName;
-    private String englishName;
-    private String scienceName;
-    private double chineseScore;
-    private double mathScore;
-    private double englishScore;
-    private double scienceScore;
+    private  String  stuName;
+    private  double  chinese;
+    private  double  math;
+    private  double  english;
+    private  double  science;
 
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
+    public String getStuName() {
+        return stuName;
     }
 
-    public String getChineseName() {
-        return chineseName;
-    }
-    public void setChineseName(String chineseName) {
-        this.chineseName = chineseName;
+    public void setStuName(String stuName) {
+        this.stuName = stuName;
     }
 
-    public String getMathName () {
-        return mathName;
-    }
-    public void setMathName(String mathName) {
-        this.mathName = mathName;
+    public double getChinese() {
+        return chinese;
     }
 
-    public String getEnglishName() {
-        return englishName;
-    }
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
+    public void setChinese(double chinese) {
+        this.chinese = chinese;
     }
 
-    public String getScienceName() {
-        return scienceName;
+    public double getMath() {
+        return math;
     }
 
-    public void setScienceName(String scienceName) {
-        this.scienceName = scienceName;
+    public void setMath(double math) {
+        this.math = math;
     }
 
-    public double getChineseScore() {
-        return chineseScore;
-    }
-    public void setChineseScore(double chineseScore) {
-        this.chineseScore = chineseScore;
+    public double getEnglish() {
+        return english;
     }
 
-    public double getMathScore() {
-        return mathScore;
-    }
-    public void setMathScore(double mathScore) {
-        this.mathScore = mathScore;
+    public void setEnglish(double english) {
+        this.english = english;
     }
 
-    public double getEnglishScore() {
-        return englishScore;
-    }
-    public void setEnglishScore(double englishScore) {
-        this.englishScore = englishScore;
+    public double getScience() {
+        return science;
     }
 
-    public double getScienceScore() {
-        return scienceScore;
-    }
-    public void setScienceScore(double scienceScore) {
-        this.scienceScore = scienceScore;
+    public void setScience(double science) {
+        this.science = science;
     }
 
-    public double avg() {
-        return (getChineseScore() + getEnglishScore() + getMathScore() + getScienceScore()) / 4;
+    //求平均分的方法
+    public  double  getAvgScore(){
+        return  (this.chinese+this.math+this.english+this.science)/4;
     }
 
-    public static void maxAvgScore(Student[] students) {
-        for (int i = 0; i < students.length-1; i++) {
-            if (students[i].avg() > students[i+1].avg()) {
-                Student x = students[i];
-                students[i] = students[i + 1];
-                students[i + 1] = x;
-            }
-        }
-        System.out.println("平均分最高的学生是：" + students[students.length - 1].getName());
-        System.out.println("语文成绩是" + students[students.length - 1].getChineseScore());
-        System.out.println("数学成绩是" + students[students.length - 1].getMathScore());
-        System.out.println("英语成绩是" + students[students.length - 1].getEnglishScore());
-        System.out.println("理科成绩是" + students[students.length - 1].getScienceScore());
+    @Override
+    public String toString() {
+        return "Student{" +
+                "stuName='" + stuName + '\'' +
+                ", chinese=" + chinese +
+                ", math=" + math +
+                ", english=" + english +
+                ", science=" + science +
+                '}';
     }
-
-    public static void maxScienceScore(Student[] students) {
-        for (int i = 0; i < students.length-1; i++) {
-            if (students[i].getScienceScore() > students[i + 1].getScienceScore()) {
-                Student x = students[i];
-                students[i] = students[i + 1];
-                students[i + 1] = x;
-            }
-        }
-        System.out.println("理科成绩最高的学生是：" + students[students.length - 1].getName());
-        System.out.println("他的理科成绩是" + students[students.length - 1].getScienceScore());
-    }
-
-
 
 }
