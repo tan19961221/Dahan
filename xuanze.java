@@ -160,7 +160,7 @@ A、行4与行6都将执行            B、行4执行，行6不执行
 C、行6执行，行4不执行         C、行4、行6都不执行 
 
 22. 有以下方法的定义，请选择该方法的返回类型（B）。
-ReturnType  method(byte x, double y)                            {
+ReturnType  method(byte x, double y){
     return  (short)x/y*2;
 }
 A byte    B short     C int     D、double 
@@ -178,13 +178,13 @@ D、 interface  B
 1.    A  a0=new  A();
 2.    A  a1 =new  B();
 3.    A  a2=new  C();
-问以下哪个说法是正确的？（ B ）
+问以下哪个说法是正确的？（ D ）
 A、只有第1行能通过编译  
 B、第1、2行能通过编译，但第3行编译出错 
 C、第1、2、3行能通过编译，但第2、3行运行时出错 
 D、第1行、第2行和第3行的声明都是正确的  
 
-26. 假设A类有如下定义，设a是A类的一个实例，下列语句调用哪个是错误的？（A）
+26. 假设A类有如下定义，设a是A类的一个实例，下列语句调用哪个是错误的？（C）
 class  A
 {     int  i;
       static  String  s;
@@ -202,7 +202,7 @@ B、在Java中一个类只能实现一个接口
 C、在Java中一个类不能同时继承一个类和实现一个接口  
 D、在Java中接口只允许单一继承  
 
-28. 给出下面代码，关于该程序以下哪个说法是正确的？（A）
+28. 给出下面代码，关于该程序以下哪个说法是正确的？（C）
 public class Person{  
 static int arr[] = new int[5];
 public static void main(String a[]) {  
@@ -246,7 +246,7 @@ B．代码得到编译，并输出“s=null”
 C．由于String s没有初始化，代码不能编译通过 
 D．代码得到编译，但捕获到 NullPointException异常 
 
-33. 编译运行以下程序后，关于输出结果的说明正确的是 （ B
+33. 编译运行以下程序后，关于输出结果的说明正确的是 （ C )
        public  class   Conditional{
            public  static  void  main(String  args[ ]){
            int  x=4;
@@ -294,7 +294,7 @@ A．2 2 2     B．2 3 3    C．2 2 3   D．3 4 4
 					c = 3;  
     	else  
 				c = 4;   
- A、1    B、2          C3          D、4 
+ A、1    B、2          C、3          D、4 
 
 38. 下面哪一个操作符的优先级最高？ （D）
     A、&&        B、|| 
@@ -310,14 +310,14 @@ A．2 2 2     B．2 3 3    C．2 2 3   D．3 4 4
  C、for (int k = 0; k < 10; k--)  
  D、for (int k = 0; k > 0; k++) 
 
-41. 有如下程序段: 
+/*41. 有如下程序段: 
        int a = b = 5;
        String s1 = "祝你今天考出好成绩！"; 
        String s2 = s1;
 则表达式a == b与s2 == s1的结果分别是：（ A ）。
        A、true与true          B、false与true  
        C、true与false          D、false与false 
-
+*/
 42. 在Java中用什么关键字修饰的方法可以直接通过类名来调用？（A）
   A static      B final       C private    D void 
 
@@ -328,14 +328,14 @@ for ( inti = 0; i< 4; i++ ){
   if ( i == 2) break;                             
   total += i;
 }
-则执行完该程序段后total的值为：（ B ）。
+则执行完该程序段后total的值为：（ A ）。
 A.0         B.1        C.3   D.6 
 
 44.如果希望某个变量只可以被类本身访问和调用,则应该使用下列哪一种访问控制修饰（A）。
     A、private                    B、protected 
     C、private  protected         D、public 
 
-47. 指出下列程序运行的结果 （D）
+47. 指出下列程序运行的结果 （B）
 public class Example{  
     String str=new String("good");  
      char[] ch = {'a','b','c'};  
@@ -355,7 +355,7 @@ B、 good and gbc
 C、 test ok and abc  
 D、 test ok and gbc  
 
-49.下面语句在编译时出现警告或错误的是(D)
+49.下面语句在编译时出现警告或错误的是(A,B,D)
 A. float f=3.14;    
 B. char c=”c”;     
 C. Boolean b=null;    Boolean 包装类没问题
@@ -415,7 +415,7 @@ D）int[][] a4=new int[3][3];
 A）0      B）2        C）4         D）10 
 
 59. 下面是People和Child类的定义和构造方法，每个构造方法都输出编号。在执行new
-Child("mike")的时候都有哪些构造方法被顺序调用？请选择输出结果 (C)
+Child("mike")的时候都有哪些构造方法被顺序调用？请选择输出结果 (D)
 
 class People {
        String name;
