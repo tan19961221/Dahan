@@ -1,5 +1,5 @@
 一、选择题
-1.下面哪些是合法的变量名? (E)
+1.下面哪些是合法的变量名? (D,E,G)
 
  A．2variable              
  B. ．variable2    
@@ -12,18 +12,18 @@
 2.请问 “abcd” instanceof Object返回的值是? (B)
 A. “abcd”  B. true   C. false  D. String 
 
-3.下面有关方法覆盖说法不正确的是：(A)
+3.下面有关方法覆盖说法不正确的是：(B)
 A. 方法覆盖要求覆盖和被覆盖的方法有相同的名字，参数列以及返回值 
 B. 方法覆盖要求覆盖和被覆盖的方法必须具有相同的访问权限； 
 C. 覆盖的方法不能比被覆盖的方法抛出更多的异常 
 D. 覆盖的方法一定不能是private的 
 
-4. 下面代码段中：(C)
+4. 下面代码段中：(A)
 String String=”String”;    
 System.out.println(String);
 A. String  B.不知道  C. 编译出错 D. 运行出错
 
-6.关于被私有保护访问控制符protected修饰的成员变量，以下说法正确的是? (B)
+6.关于被私有保护访问控制符protected修饰的成员变量，以下说法正确的是? (A)
 A．可以被三种类所引用：该类自身、与它在同一个包中的其他类、在其他包中的该类的子类  
 B. 可以被两种类访问和引用：该类本身、该类的所有子类 
 C. 只能被该类自身所访问和修改 
@@ -53,7 +53,7 @@ B. 数组是无序数据的集合
 C. 抽象类可以实例化 
 D. 类成员数据必须是公有的 
 
-11.在创建对象时必须（D）
+11.在创建对象时必须（C）
 A) 先声明对象，然后才能使用对象 
 B) 先声明对象，为对象分配内存空间，然后才能使用对象 
 C) 先声明对象，为对象分配内存空间，对对象初始化，然后才能使用对象 
@@ -69,7 +69,7 @@ D) 上述说法都不对
 A) 安全性            B) 多线(程)性           
     C)跨平台             D) 可移植 
 
-15.关于以下application的说明，正确的是（A）
+15.关于以下application的说明，正确的是（C）
 1．  class   StaticStuff
 2． {  
 3．   static  int  x=10； 
@@ -104,7 +104,7 @@ B、 10行不能通过编译，因为x是私有静态变量
 C、 程序通过编译，输出结果为：x=103 
 D、 程序通过编译，输出结果为：x=102 
 
-17.以下选项中循环结构合法的是（D）
+17.以下选项中循环结构合法的是（C）
 A、while (int  i<7) 
 {     i++;
      System.out.println(“i is “+i); 
@@ -143,7 +143,7 @@ D、private  float  aMethod（int a，int b，int c）{ return ..;  }
 5． public  class  Test2  extends  Test1{ 
 6． 
 7．} 
-将以下哪种方法插入行6是不合法的。（A）
+将以下哪种方法插入行6是不合法的。（B）
 A、float  aMethod（float  a，float  b）{ } 
 B、public  int  aMethod（int a，int b）throws  Exception{ } 
 C、public  float  aMethod（float  p，float q）{ } 
@@ -196,13 +196,13 @@ B、a.method1();
 C、A.method1(); 
 D、A.method2() 
 
-27. 以下关于继承的叙述正确的是（D）。
+27. 27. 以下关于继承的叙述正确的是(A)
 A、在Java中类只允许单一继承 
 B、在Java中一个类只能实现一个接口  
 C、在Java中一个类不能同时继承一个类和实现一个接口  
 D、在Java中接口只允许单一继承  
 
-28. 给出下面代码，关于该程序以下哪个说法是正确的？（C）
+28. 给出下面代码，关于该程序以下哪个说法是正确的？（A）
 public class Person{  
 static int arr[] = new int[5];
 public static void main(String a[]) {  
@@ -215,7 +215,7 @@ C、输出零           		 D、输出空
 29 在使用interface声明一个接口时，只可以使用（D）修饰符修饰该接口。
 A、private            B、protected         C、private  protected   D、public 
 
-30. 编译并运行以下程序，以下描述哪个选项是正确的（D）
+30. 编译并运行以下程序，以下描述哪个选项是正确的（C）
 1.  class  A{
 2.      protected  boolean  equals(){
 					// public boolean equals(Object obj)
@@ -239,14 +239,14 @@ System.out.println("s=" + s);
 }
 }
  
-输出结果应该是：（ C ）
+输出结果应该是：（ B ）
 
 A．代码得到编译，并输出“s=” 
 B．代码得到编译，并输出“s=null”  
 C．由于String s没有初始化，代码不能编译通过 
 D．代码得到编译，但捕获到 NullPointException异常 
 
-33. 编译运行以下程序后，关于输出结果的说明正确的是 （ C
+33. 编译运行以下程序后，关于输出结果的说明正确的是 （ B
        public  class   Conditional{
            public  static  void  main(String  args[ ]){
            int  x=4;
@@ -264,7 +264,7 @@ B．x[9]未定义
 C．x[10]为0 
 D．x[0]为空 
 
-35. 关于以下程序段，正确的说法是（D）
+35. 关于以下程序段，正确的说法是（C）
 1．  String  s1=“a”+“b”; 
 2．   String  s2=new  String（s1）； 
 3．    if（s1= =s2） 
@@ -304,7 +304,7 @@ A．2 2 2     B．2 3 3    C．2 2 3   D．3 4 4
        A、2与6               B、3与8 
        C、3与5               D、2与8 （++i先运算再取值）
 
-40. 下面哪一个循环会导致死循环？（D）
+40. 下面哪一个循环会导致死循环？（C）
  A、for (int k = 0; k < 0; k++)     
  B、for (int k = 10; k > 0; k--) 
  C、for (int k = 0; k < 10; k--)  
@@ -314,7 +314,7 @@ A．2 2 2     B．2 3 3    C．2 2 3   D．3 4 4
        int a = b = 5;
        String s1 = "祝你今天考出好成绩！"; 
        String s2 = s1;
-则表达式a == b与s2 == s1的结果分别是：（C ）。
+则表达式a == b与s2 == s1的结果分别是：（ A ）。
        A、true与true          B、false与true  
        C、true与false          D、false与false 
 
