@@ -20,9 +20,9 @@ public class Test {
         int x = 0;
         System.out.println("请输入你的名字：");
         Scanner scr = new Scanner(System.in);
+        for (int a = 0; a < students.size(); a++) {
         while (quit == 0) {
             String name = scr.next();
-            for (int a = 0; a < students.size(); a++) {
                 if (students.get(a).getStuName().equals(name)) {
                     x = a;
                     quit = 1;
