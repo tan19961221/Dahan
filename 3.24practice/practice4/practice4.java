@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class practice4 {
+public class Practice4 {
     public static class Student {
         private String name;
         private int age;

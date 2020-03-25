@@ -2,7 +2,7 @@ package practicceJava;
 
 import java.io.*;
 
-public class practiceJava {
+public class PracticeJava {
 
     public static int num = 0;
 

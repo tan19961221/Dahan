@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //利用字节流或者换成字节流的方式以指定的格式输入数据 如:xxx,xxx,xxx,最后一个数据以 .号结束，一行最多五个数据
-public class practice2 {
+public class Practice2 {
     public static void main(String[] args) {
         File file = new File("2.txt");
         if (!file.exists()) {

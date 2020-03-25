@@ -3,7 +3,7 @@ package practice3;
 
 import java.io.*;
 
-public class practice3 {
+public class Practice3 {
     public static void main(String[] args) {
         new File("a").mkdir();
         new File("b").mkdir();
