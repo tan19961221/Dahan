@@ -9,14 +9,7 @@ public class Snake {
 
     public Node eat(Node food) {
         //蛇吃食物
-        // 如果food与头部相邻，则将food这个Node加入到body中，返回food
-        // 否则不做任何操作，返回null
-
-        if (isNeighbor(getHead(), food)) {
-            body.addFirst(food);
-            return food;
-        }
-        return null;
+        
     }
     /**
      * 往某个方向移动，蛇的身体可能会重叠，重叠判断由<code>Grid</code>处理。

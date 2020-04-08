@@ -46,7 +46,8 @@ public class Grid {
         int x = width / 2;
         int y = height / 2;
         for (int ss = 0; ss < 5; ss++) {
-            snake.addTail(new Node(x, y));
+
+            //长身体未完成
             x += 1;
         }
 
