@@ -47,7 +47,7 @@ public class Grid {
         int y = height / 2;
         for (int ss = 0; ss < 5; ss++) {
 
-            //长身体未完成
+            //长身体
             x += 1;
         }
 

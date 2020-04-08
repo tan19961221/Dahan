@@ -10,6 +10,8 @@ public class Snake {
     public Node eat(Node food) {
         //蛇吃食物
         
+
+        return food;
     }
     /**
      * 往某个方向移动，蛇的身体可能会重叠，重叠判断由<code>Grid</code>处理。
