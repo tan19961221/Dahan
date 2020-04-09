@@ -47,9 +47,10 @@ public class Grid {
         int y = height / 2;
         for (int ss = 0; ss < 5; ss++) {
 
-            //长身体
+            snake.addTail(new Node(x, y));
             x += 1;
         }
+        snake.getBody().forEach(this::occupy);
 
         return snake;
     }
@@ -78,11 +79,23 @@ public class Grid {
      */
     public boolean nextRound() {
 
+        Node deletedTail = snake.move(snakeDirection);
+        // Head不在范围内结束
+        if (!validPosition(snake.getHead())) {
+            return false;
+        }
+        //更新
+        occupy(snake.getHead());
 
+        // 吃到了food
+        if (isFood(snake.getHead())) {
+            snake.addTail(deletedTail);
+            createFood();
+        } else {
+            dispose(deletedTail);
+        }
 
-
-
-        return false;
+        return true;
     }
 
     public void changeDirection(Direction newDirection) {

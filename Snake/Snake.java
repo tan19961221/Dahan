@@ -5,13 +5,21 @@ import java.util.LinkedList;
 public class Snake {
 
     //蛇的身子
-    private final LinkedList<Node> body = new LinkedList<>();
+    private  LinkedList<Node> body = new LinkedList<>();
+
+    public Snake() {
+    }
 
     public Node eat(Node food) {
         //蛇吃食物
-        
+        // 如果food与头部相邻，则将food这个Node加入到body中，返回food
+        // 否则不做任何操作，返回null
 
-        return food;
+        if (isNeighbor(getHead(), food)) {
+            body.addFirst(food);
+            return food;
+        }
+        return null;
     }
     /**
      * 往某个方向移动，蛇的身体可能会重叠，重叠判断由<code>Grid</code>处理。
@@ -41,6 +49,7 @@ public class Snake {
             default:
                 break;
         }
+        body.addFirst(newHead);
 
         return body.removeLast();
     }
