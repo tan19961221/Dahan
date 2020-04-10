@@ -50,8 +50,6 @@ public class Grid {
             snake.addTail(new Node(x, y));
             x += 1;
         }
-        snake.getBody().forEach(this::occupy);
-
         return snake;
     }
 

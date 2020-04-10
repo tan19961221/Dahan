@@ -42,6 +42,7 @@ public class GameController implements Runnable, KeyListener {
                 case KeyEvent.VK_ENTER:
                     restart = true;
                     running = true;
+                    grid.init();
                     new Thread(this).start();
                     break;
                 case KeyEvent.VK_SPACE:
@@ -68,14 +69,16 @@ public class GameController implements Runnable, KeyListener {
             } catch (InterruptedException e) {
                 break;
             }
-            if(restart){
-                this.grid.init();
-                restart = false;
-            }else {
-                this.grid.nextRound();
+            // 如果结束，则退出游戏
+            if (!grid.nextRound()) {
+                running = false;
+                gameView.showGameOverMessage();
+                break;
             }
-            this.gameView.draw();
+            // 如果继续，则绘制新的游戏页面
+            gameView.draw();
         }
+        running = false;
     }
 
     @Override
