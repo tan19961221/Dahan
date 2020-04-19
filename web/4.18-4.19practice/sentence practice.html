@@ -35,9 +35,15 @@
         bac {
             font-size: 22px;    
             line-height: 50px;
-
         }
 
+        abc::before{
+            content: "“";
+        }
+
+        abc::after{
+            content: "”";
+        }
     </style>
 </head>
 
@@ -45,7 +51,7 @@
     <div class="test">
         <div class="cwert">
             <bac>John Doe & Sons:</bac><br/>
-            <abc>“We highly appreciate the enthusiasm and creative talent of the people at Legend!”</abc>
+            <abc>We highly appreciate the enthusiasm and creative talent of the people at Legend!</abc>
         </div>  
     </div>
 </body>
