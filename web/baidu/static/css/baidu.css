@@ -1,0 +1,173 @@
+/* 初始化 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    float: left;
+    margin-top: 25px;
+}
+
+.header-li{
+    float: left;
+    list-style: none;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.header a{
+    color: #333;
+    text-decoration: none;
+}
+
+.header-right a{
+    color: #333;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color:#3388ff;
+}
+/* 右边 */
+.header-right{
+    float: right;
+    margin-top: 25px;
+    margin-right: 32px;
+}
+.header-right a:hover{
+    color:#3388ff;
+}
+
+.a1{
+    text-align: center;
+    overflow: hidden;
+    background-color: #3385ff;
+    padding: 5px;
+}
+
+.clear{
+    clear: both;
+}
+/* 主体 */
+.search{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+/* 居中 */
+.search-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img1{
+    width: 270px;
+    height: 129px;
+}
+
+.search-input{
+    height: 40px;
+    width: 450px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: none;
+    border: 2px solid #4E71F2;
+    border-right: none;
+    float: left;
+}
+
+.search-button{
+    height: 44px;
+    width: 100px;
+    border-radius: 0px 5px 5px 0px;
+    border: 2px solid #4E71F2;
+    background-color: #4E71F2;
+    color: white;
+    font-size: 16px;
+}
+
+.img2{
+    width: 106px;
+    height: 106px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #f3f3f3;
+}
+
+.weizi1{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #333;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 3px;
+}
+
+.wenzi2{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    olor: #999;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+
+}
+
+
+/* 尾部 */
+
+footer{
+    position: fixed;
+    background-color: #fafafa;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.footer{
+    float: left;
+}
+
+.footer-li{
+    float: left;
+    list-style: none;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.footer a{
+    color: #999;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color:#333;
+}
+
+/* 尾部右边 */
+.footer-right{
+    float: right;
+    margin-bottom: 25px;
+    margin-right: 32px;
+}
+.footer-right a{
+    color: #999;
+    text-decoration: none;
+}
+.footer-right a:hover{
+    color:#333;
+}
