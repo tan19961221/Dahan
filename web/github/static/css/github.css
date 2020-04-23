@@ -17,6 +17,8 @@ body{
     clear: both;
 }
 
+
+/*头部*/
 header{
 	width:100%px;
 	height:36px;
@@ -101,6 +103,8 @@ a:hover {
 	float:right;
 }
 
+
+/*主体左边*/
 .body-left{
     width: 300px;
     height: 100%;
@@ -179,6 +183,7 @@ a:hover {
     font-weight: 600;  
 } 
 
+/*主体右边*/
 .body-right{
     height: 960px;
     width: 348px;
@@ -325,6 +330,7 @@ a:hover {
     color: #0366d6;
 }
 
+/*主体中间*/
 .body-mid{
     width: 740px;
     float: left;
